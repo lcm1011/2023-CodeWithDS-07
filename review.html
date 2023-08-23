@@ -13,6 +13,13 @@
     justify-content: center;
     display:flex;
   }
+  .form{
+    font-size:50px;
+    text-align: center;
+    align-items:center; 
+    justify-content: center;
+    display:flex;
+  }
           .nav-link {
               font-size: 18px;
               padding : 10px;
@@ -40,6 +47,36 @@
          <header class="py-5">
             <h1 style="text-align: center; "><strong><span style="color: #773D30;">리뷰</span></strong></h1>
          </header>
-          
+         <div class="review-form">
+            <h3>리뷰 작성</h3>
+            <form>
+                <label for="menu">메뉴명 :</label>
+                <input type="text" id="menu" name="menu" required><br><br>
+    
+                <label for="review">리뷰 내용:</label><br>
+                <textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+    
+                <label for="image">이미지 업로드:</label>
+                <input type="file" id="image" name="image"><br><br>
+    
+                <button type="submit">리뷰 작성</button>
+            </form>
+        </div>
+    <!--이 부분은 백 분들이 java를 연결해서 위에 리뷰 작성한걸 저장한 뒤 목록에 나타나게 해주셔야해요!-->
+    <!--일단 이런식으로 웹 페이지에 보이게 됩니다!-->    
+    <div class="review-list">
+            <h3>리뷰 목록</h3>
+            <div class="review">
+                <h4>토마토 파스타 리뷰</h4>
+                <img src="review_image.jpg" alt="리뷰 이미지" width="150"><br>
+                <p>맛있었어요! 추천합니다.</p>
+            </div>
+    
+            <div class="review">
+                <h4>알리오 올리오 리뷰</h4>
+                <img src="review_image.jpg" alt="리뷰 이미지" width="150"><br>
+                <p>감사합니다! 다음에 또 먹고 싶어요.</p>
+            </div>
+        </div>
     </body>
 </html>
