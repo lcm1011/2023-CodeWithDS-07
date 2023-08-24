@@ -1,165 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .starpoint_wrap{display:inline-block;}
-        .starpoint_box{position:relative;background:url(https://ido-archive.github.io/svc/etc/element/img/sp_star.png) 0 0 no-repeat;font-size:0;}
-        .starpoint_box .starpoint_bg{display:block;position:absolute;top:0;left:0;height:18px;background:url(https://ido-archive.github.io/svc/etc/element/img/sp_star.png) 0 -20px no-repeat;pointer-events:none;}
-        .starpoint_box .label_star{display:inline-block;width:10px;height:18px;box-sizing:border-box;}
-        .starpoint_box .star_radio{opacity:0;width:0;height:0;position:absolute;}
-        .starpoint_box .star_radio:nth-of-type(1):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(1):checked ~ .starpoint_bg{width:10%;}
-        .starpoint_box .star_radio:nth-of-type(2):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(2):checked ~ .starpoint_bg{width:20%;}
-        .starpoint_box .star_radio:nth-of-type(3):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(3):checked ~ .starpoint_bg{width:30%;}
-        .starpoint_box .star_radio:nth-of-type(4):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(4):checked ~ .starpoint_bg{width:40%;}
-        .starpoint_box .star_radio:nth-of-type(5):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(5):checked ~ .starpoint_bg{width:50%;}
-        .starpoint_box .star_radio:nth-of-type(6):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(6):checked ~ .starpoint_bg{width:60%;}
-        .starpoint_box .star_radio:nth-of-type(7):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(7):checked ~ .starpoint_bg{width:70%;}
-        .starpoint_box .star_radio:nth-of-type(8):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(8):checked ~ .starpoint_bg{width:80%;}
-        .starpoint_box .star_radio:nth-of-type(9):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(9):checked ~ .starpoint_bg{width:90%;}
-        .starpoint_box .star_radio:nth-of-type(10):hover ~ .starpoint_bg,
-        .starpoint_box .star_radio:nth-of-type(10):checked ~ .starpoint_bg{width:100%;}
-
-        .blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height: 1px;overflow:hidden;}
-        
-        .count-wrap {position: relative;padding: 0 38px;border: 1px solid #ddd;overflow: hidden;width: 60px;}
-        .count-wrap > button {border: 0;background: #ddd;color: #000;width: 38px;height: 38px;position: absolute;top: 0;font-size: 12px;}
-        .count-wrap > button.minus {left: 0;}
-        .count-wrap > button.plus {right: 0;}
-        .count-wrap .inp {border: 0;height: 38px;text-align: center;display: block;width: 100%;}
-    </style>  
-    <title>파스타</title>
-    <link rel="shortcut icon" href="assets//logo3.ico">
-    
-</head>  
-<body style="background-color: #FFF3DF;">
-
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#!" style="color:#F6E6E4 ; font-size: 30px; width: 297px; height: 84px; top: 41px; left: 102px;"><strong><span style="color: #BE0D37;">   덕</span><span style="color: #773D30;">스러운 </span><span style="color: #FB9718;">학식</span><span style="color: #773D30;">생활</span></strong></a>
-        
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav" style="color: #773D30;">
-                <li class="nav-item">
-                    <a class="nav-link" href="#!">장바구니</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!">선물</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!">리뷰</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!">현황</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!">알림</a>
-                </li>
-           
-            </ul>
-        </div>
-        </div>
-    </nav>
-
-    <section style="text-align: center; color: #773D30;">
-        <h7>#계란</h7>
-        <h2>김치삼겹살필라프</h2>
-        <div class="starpoint_wrap">
-            <div class="starpoint_box">
-                <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
-                <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
-                <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
-                <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
-                <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
-                <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
-                <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
-                <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
-                <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
-                <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
-                <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
-                <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
-                <span class="starpoint_bg"></span>
-            </div>
-        </div>
-        <h7>(-명)</h7>
-        <p></p>
-        <h7>김치와 삽겹살이 어우러져 맛있는 필라프! 호불호 없이 무난하게 즐길 수 있는 맛</h7>
-        <br>
-        <h9>Simple is the best!</h9>
-        <figure class="figure">
-            <img src="assets/김삼필 1.png" class="figure-img img-fluid rounded" alt="..." width="500" height="300">
-            <figcaption class="figure-caption">7500원
-            </figcaption>
-        </figure>
-
-        <div class="count-wrap _count" style="text-align: center;">
-            <button type="button" class="minus">-</button>
-            <input type="text" class="inp" value="1" />
-            <button type="button" class="plus">+</button>
-        </div>
-    </section>
-
-    <section>
-        <p style="font-size: 50px;">Review</p>
-
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-          
-            <div class="card-body">
-              <h5 class="card-title">전*우</h5>
-              <p class="card-text"></p>
-              <a href="pasta.html" class="btn btn-primary">자세히 보기</a>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">전*우</h5>
-              <p class="card-text"></p>
-              <a href="pasta.html" class="btn btn-primary">자세히 보기</a>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">전*우</h5>
-              <p class="card-text"></p>
-              <a href="pasta.html" class="btn btn-primary">자세히 보기</a>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">전*우</h5>
-              <p class="card-text"></p>
-              <a href="pasta.html" class="btn btn-primary">자세히 보기</a>
-            </div>
-          
-    </section>
-
-
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="">1</a></li>
-          <li class="page-item"><a class="page-link" href="">2</a></li>
-          <li class="page-item"><a class="page-link" href="">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="">Next</a>
-          </li>
-        </ul>
-      </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div
+  style="width: 1440px; height: 1024px; position: relative; overflow: hidden; background: #fffdf9;"
+>
+  <p
+    style="width: 410px; height: 71px; position: absolute; left: 515px; top: 223px; font-size: 35px; text-align: center;"
+  >
+    <span style="width: 410px; height: 71px; font-size: 35px; text-align: center; color: #773d30;"
+      >오늘의</span
+    ><span style="width: 410px; height: 71px; font-size: 35px; text-align: center; color: #fb9718;">
+      냠냠</span
+    >
+  </p>
+  <div
+    style="width: 157px; height: 53px; position: absolute; left: 107px; top: 321px; background: #fb9718; border-width: 1px; border-color: #fb9718;"
+  ></div>
+  <div
+    style="width: 157px; height: 53px; position: absolute; left: 1017px; top: 322px; border-width: 1px; border-color: #fb9718;"
+  ></div>
+  <div
+    style="width: 157px; height: 53px; position: absolute; left: 264px; top: 321px; border-width: 1px; border-color: #fb9718;"
+  ></div>
+  <div
+    style="width: 157px; height: 53px; position: absolute; left: 421px; top: 321px; border-width: 1px; border-color: #fb9718;"
+  ></div>
+  <div
+    style="width: 157px; height: 53px; position: absolute; left: 1174px; top: 322px; border-width: 1px; border-color: #fb9718;"
+  ></div>
+  <svg
+    width="1224"
+    height="2"
+    viewBox="0 0 1224 2"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 107px; top: 374px;"
+    preserveAspectRatio="none"
+  >
+    <line x1="0.000408497" y1="0.5" x2="1224" y2="1.5" stroke="#FB9718"></line>
+  </svg>
+  <p
+    style="width: 113px; height: 41px; position: absolute; left: 130px; top: 328px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    오늘의 메뉴
+  </p>
+  <p
+    style="width: 113px; height: 41px; position: absolute; left: 1197px; top: 329px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    디저트
+  </p>
+  <p
+    style="width: 113px; height: 41px; position: absolute; left: 444px; top: 328px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    라멘
+  </p>
+  <p
+    style="width: 113px; height: 41px; position: absolute; left: 1040px; top: 329px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    음료
+  </p>
+  <p
+    style="width: 113px; height: 41px; position: absolute; left: 287px; top: 328px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    파스타
+  </p>
+  <div
+    style="width: 220px; height: 220px; position: absolute; left: 605px; top: 470px; border-width: 1px; border-color: #000;"
+  ></div>
+  <p
+    style="width: 60px; height: 34px; position: absolute; left: 774px; top: 733px; font-size: 20px; text-align: left; color: #000;"
+  >
+    (5명)
+  </p>
+  <p
+    style="width: 155px; height: 35px; position: absolute; left: 644px; top: 770px; font-size: 20px; text-align: center; color: #000;"
+  >
+    #우유 #땅콩
+  </p>
+  <p
+    style="width: 155px; height: 35px; position: absolute; left: 644px; top: 808px; font-size: 22px; text-align: center; color: #000;"
+  >
+    6,500원
+  </p>
+  <p
+    style="width: 155px; height: 35px; position: absolute; left: 639px; top: 697px; font-size: 22px; text-align: center; color: #000;"
+  >
+    오늘의 메뉴
+  </p>
+  <svg
+    width="30"
+    height="28"
+    viewBox="0 0 30 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 615px; top: 734px;"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+      fill="#D9D9D9"
+    ></path></svg
+  ><svg
+    width="30"
+    height="28"
+    viewBox="0 0 30 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 643px; top: 734px;"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+      fill="#D9D9D9"
+    ></path></svg
+  ><svg
+    width="30"
+    height="28"
+    viewBox="0 0 30 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 674px; top: 734px;"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+      fill="#D9D9D9"
+    ></path></svg
+  ><svg
+    width="30"
+    height="28"
+    viewBox="0 0 30 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 704px; top: 734px;"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+      fill="#D9D9D9"
+    ></path></svg
+  ><svg
+    width="30"
+    height="28"
+    viewBox="0 0 30 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 735px; top: 734px;"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+      fill="#D9D9D9"
+    ></path>
+  </svg>
+  <p
+    style="width: 250px; height: 70px; position: absolute; left: 113px; top: 382px; font-size: 23px; text-align: center; color: #773d30;"
+  >
+    현재 학식당 혼잡도: 보통
+  </p>
+  <svg
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: 699px; top: 962px;"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <circle cx="20" cy="20" r="20" fill="#FB9718"></circle>
+  </svg>
+  <p
+    style="width: 19px; height: 37px; position: absolute; left: 711px; top: 965px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    1
+  </p>
+  <p
+    style="width: 250px; height: 70px; position: absolute; left: 1076px; top: 387px; font-size: 22px; text-align: center; color: #773d30;"
+  >
+    예상 품절 시간: 한 시간 후
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 1166px; top: 142px; font-size: 20px; font-weight: 700; text-align: center; color: #773d30;"
+  >
+    Login
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 515px; top: 142px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    알림
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 395px; top: 142px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    현황
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 275px; top: 142px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    리뷰
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 155px; top: 142px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    선물
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 35px; top: 142px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    장바구니
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 1286px; top: 142px; font-size: 20px; font-weight: 700; text-align: center; color: #773d30;"
+  >
+    My Page
+  </p>
+  <svg
+    width="1440"
+    height="12"
+    viewBox="0 0 1440 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: -1px; top: 194px;"
+    preserveAspectRatio="none"
+  >
+    <g filter="url(#filter0_d_62_65)">
+      <line x1="-0.00104166" y1="3.5" x2="1440" y2="0.500001" stroke="#FB9718"></line>
+    </g>
+    <defs>
+      <filter
+        id="filter0_d_62_65"
+        x="-4.0022"
+        y="0"
+        width="1448"
+        height="12"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        ></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+        ></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_62_65"></feBlend>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_62_65"
+          result="shape"
+        ></feBlend>
+      </filter>
+    </defs></svg
+  ><svg
+    width="1440"
+    height="12"
+    viewBox="0 0 1440 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position: absolute; left: -1px; top: 135px;"
+    preserveAspectRatio="none"
+  >
+    <g filter="url(#filter0_d_62_66)">
+      <line x1="-0.00104166" y1="3.5" x2="1440" y2="0.500001" stroke="#FB9718"></line>
+    </g>
+    <defs>
+      <filter
+        id="filter0_d_62_66"
+        x="-4.0022"
+        y="0"
+        width="1448"
+        height="12"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        ></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+        ></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_62_66"></feBlend>
+        <feBlend 
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_62_66"
+          result="shape"
+        ></feBlend>
+      </filter>
+    </defs>
+  </svg>
+  <p
+    style="width: 555px; height: 84px; position: absolute; left: 443px; top: 21px; font-size: 50px; text-align: center;"
+  >
+    <span style="width: 555px; height: 84px; font-size: 50px; text-align: center; color: #be0d37;"
+      >덕</span
+    ><span style="width: 555px; height: 84px; font-size: 50px; text-align: center; color: #773d30;"
+      >스러운 </span
+    ><span style="width: 555px; height: 84px; font-size: 50px; text-align: center; color: #fb9718;"
+      >학식</span
+    ><span style="width: 555px; height: 84px; font-size: 50px; text-align: center; color: #773d30;"
+      >생활</span
+    >
+  </p>
+</div>
 </body>
 </html>

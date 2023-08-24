@@ -1,80 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>덕스러운 학식생활</title>
-        <style>
-          body {overflow: scroll; 
-              background-color: #FFF3DF;
-          }
-  .title{
-    font-size:50px;
-    text-align: center;
-    align-items:center; 
-    justify-content: center;
-    display:flex;
-  }
-          .nav-link {
-              font-size: 18px;
-              padding : 10px;
-              color: #773D30;
-          }
-article {border:2px solid color=#FB9718;
-    width:300px; height:250px;
-    font-size:0.8em; margin:10px;
-    padding:10px;
-    float:left;
-    background-color:#F6E6E4;
-    border-radius: 5px;
-    text-align: center;}
-      </style>
-    </head>
-    <body>
-          <a class="title" href="main.html" style="color:#F6E6E4 ;"><strong><span style="color: #BE0D37;">   덕</span><span style="color: #773D30;">스러운 </span><span style="color: #FB9718;">학식</span><span style="color: #773D30;">생활</span></strong></a>
-      </div>
-      <div>
-          <hr size="2" noshade style="color: #FB9718;">
-          <nav class="nav justify-content-between">
-              <a class="nav-link" href="cart.html" >장바구니</a>
-              <a class="nav-link" href="gift.html" >선물</a>
-              <a class="nav-link" href="review.html" >리뷰</a>
-              <a class="nav-link" href="now.html" >현황</a>
-              <a class="nav-link" href="notice.html" >알림</a>
-              <a class="nav-link" href="login.html" style="text-align:right"><strong>Log in</strong></a>
-              <a class="nav-link" href="mypage.html" style="text-align:right"><strong>My Page</strong></a>
-          </nav>
-      </div>
-      <hr size="2" noshade style="color: #FB9718;">
 
-         <header class="py-5">
-            <h1 style="text-align: center; "><strong><span style="color: #773D30;">오늘의 </span><span style="color: #FB9718;">냠냠</span></strong></h1>
-         </header>
-          <hr size="2" noshade style="color: #FB9718;">
-          <nav class="nav justify-content-between"></nav>
-              <a class="nav-link" href="today.html" style="color: #773D30;">오늘의 메뉴</a>
-              <a class="nav-link" href="pasta.html" style="color: #773D30;">파스타</a>
-              <a class="nav-link" href="ramen.html" style="color: #773D30;">라멘</a>
-              <a class="nav-link" href="japan.html" style="color: #773D30;">일식</a>
-              <a class="nav-link" href="korea.html" style="color: #773D30;">한식</a>
-              <a class="nav-link" href="drink.html" style="color: #773D30;">음료</a>
-                <a class="nav-link" href="dessert.html" style="color: #773D30;">디저트</a>
-</nav>
-<hr size="2" noshade style="color: #FB9718;">
-<header class="py-5">
-      <h1 style="text-align: center; "><strong><span style="color: #773D30;">음료</span></strong></h1>
-   </header>
-   <section>
-  <div class="lay1">    
-      <article>
-      <h3> Menu_Name</h3>
-      <img src="#" alt="" width="100" height="100">
-      <p>Menu_Tag</p>
-      <p>Menu_Price</p>
-      </article>
+<head>
+    <title>덕스러운 학식생활</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 
-  </div>     
-      <footer>
-      </footer>
-      
-  </section>
-    </body>
+    <style>
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        body {
+            overflow: scroll;
+            background-color: #FFFDF9;
+        }
+
+        .title {
+            font-size: 80px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 40px 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .nav-link {
+            font-size: 25px;
+            padding: 10px;
+            color: #773D30;
+            text-decoration-line: none;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover {
+            font-size: 25px;
+            background-color: #F6E6E4;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+        hr {
+            background: #FB9718;
+            height: 2px;
+            border: 0;
+        }
+
+        .img {
+            border: 2px solid #773D30;
+        }
+
+        article {
+            border: 2px solid color=#FB9718;
+            width: 300px;
+            height: 250px;
+            font-size: 0.8em;
+            margin: 10px;
+            padding: 10px;
+            float: left;
+            background-color: #F6E6E4;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        article:hover {
+            background-color: #ffe4ae;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+        .nav-link2 {
+            text-decoration: none;
+            font-size: 20px;
+
+            width: 150px;
+            height: 40px;
+            border: 1px solid #FB9718;
+            display: inline-block;
+            /*인라인요소는 사이즈가 정해져있음 따라서, display:inline-block 혹은 block해야함*/
+            margin: 5px 50px;
+            text-align: center;
+            line-height: 40px;
+            background: #fd978a;
+            color: #773D30;
+            /*글씨색*/
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="title" href="main.html" style="color:#F6E6E4 ;"><strong><span style="color: #BE0D37;"> 덕</span><span
+                style="color: #773D30;">스러운 </span><span style="color: #FB9718;">학식</span><span
+                style="color: #773D30;">생활</span></strong></a>
+    </div>
+    <div>
+        <hr>
+        <nav class="nav">
+            <a class="nav-link" href="cart.html">장바구니</a>
+            <a class="nav-link" href="gift.html">선물</a>
+            <a class="nav-link" href="review.html">리뷰</a>
+            <a class="nav-link" href="now.html">현황</a>
+            <a class="nav-link" href="notice.html">알림</a>
+            <a class="nav-link" href="login.html"><strong>Log in</strong></a>
+            <a class="nav-link" href="mypage.html"><strong>My Page</strong></a>
+        </nav>
+    </div>
+    <hr>
+
+    <!--<header class="py-5">
+        <h1 style="text-align: center; "><strong><span style="color: #773D30;">오늘의 </span><span
+                    style="color: #FB9718;">냠냠</span></strong></h1>
+    </header>-->
+    <header class="py-5">
+        <h1 style="text-align: center; "><strong><span style="color: #773D30;">음료</span></strong></h1>
+    </header>
+    <nav class="nav">
+        <a class="nav-link2" href="today.html" style="color: #773D30;"><strong>오늘의 메뉴</strong></a>
+        <a class="nav-link2" href="pasta.html" style="color: #773D30;"><strong>파스타</strong></a>
+        <a class="nav-link2" href="ramen.html" style="color: #773D30;"><strong>라멘</strong></a>
+        <a class="nav-link2" href="japan.html" style="color: #773D30;"><strong>일식</strong></a>
+        <a class="nav-link2" href="korea.html" style="color: #773D30;"><strong>한식</strong></a>
+        <a class="nav-link2" href="drink.html" style="color: #773D30;"><strong>음료</strong></a>
+    </nav>
+
+    <section>
+        <div class="lay1">
+            <article>
+                <h3>아메리카노_hot</h3></a>
+                <img src="5.1.jpg" alt="" width="100" height="100">
+                <p>향긋한 원두커피입니다</p>
+                <p>☆5.0</p>
+                <p>2000원</p>
+            </article>
+            <article>
+                <h3>헤이즐넛아메리카노_hot</h3></a>
+                <img src="5.2.jpg" alt="" width="100" height="100">
+                <p>헤이즐넛 시럽이 들어간 아메리카노입니다</p>
+                <p>☆4.7</p>
+                <p>2500원</p>
+            </article>
+            <article>
+                <h3>카페라떼_hot</h3></a>
+                <img src="5.3.jpg" alt="" width="100" height="100">
+                <p>우유가 들어간 원두커피입니다</p>
+                <p>☆4.9</p>
+                <p>2900원</p>
+            </article>
+            <article>
+                <h3>카푸치노_hot</h3></a>
+                <img src="5.4.jpg" alt="" width="100" height="100">
+                <p>우유거품과 함께 즐기는 라떼입니다</p>
+                <p>☆4.3</p>
+                <p>3200원</p>
+            </article>
+            <article>
+                <h3>아메리카노_iced</h3></a>
+                <img src="5.1.jpg" alt="" width="100" height="100">
+                <p>향긋한 원두커피입니다</p>
+                <p>☆5.0</p>
+                <p>2000원</p>
+            </article>
+            <article>
+                <h3>헤이즐넛아메리카노_iced</h3></a>
+                <img src="5.2.jpg" alt="" width="100" height="100">
+                <p>헤이즐넛 시럽이 들어간 아메리카노입니다</p>
+                <p>☆4.7</p>
+                <p>2500원</p>
+            </article>
+            <article>
+                <h3>카페라떼_iced</h3></a>
+                <img src="5.3.jpg" alt="" width="100" height="100">
+                <p>우유가 들어간 원두커피입니다</p>
+                <p>☆4.9</p>
+                <p>2900원</p>
+            </article>
+            <article>
+                <h3>카푸치노_iced</h3></a>
+                <img src="5.4.jpg" alt="" width="100" height="100">
+                <p>우유거품과 함께 즐기는 라떼입니다</p>
+                <p>☆4.3</p>
+                <p>3200원</p>
+            </article>
+        </div>
+    </section>
+</body>
+
 </html>
