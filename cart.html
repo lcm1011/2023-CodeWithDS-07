@@ -9,6 +9,9 @@
     <style>
         * {
             font-family: 'Manrope', sans-serif;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         body {
@@ -83,7 +86,42 @@
             border: 2px solid #773D30;
         }
 
+        .nav-link2 {
+            text-decoration: none;
+            font-size: 20px;
+            width: 150px;
+            height: 40px;
+            border: 1px solid #FB9718;
+            display: inline-block;
+            /*인라인요소는 사이즈가 정해져있음 따라서, display:inline-block 혹은 block해야함*/
+            margin: 5px 50px;
+            text-align: center;
+            line-height: 40px;
+            background: #fd978a;
+            color: #773D30;
+            /*글씨색*/
+            border-radius: 10px;
+        }
+
+        .review-box {
+            border: 2px solid #BE0D37;
+            border-radius: 15px;
+            height: 300px;
+            width: 200x;
+            padding-left: 2%;
+            padding-top: 3%;
+        }
+
+        .box {
+            border: 2px solid #BE0D37;
+            background-color: #BE0D37;
+            border-radius: 20px;
+            height: 100px;
+            width: 250x;
+            text-align: center;
+        }
     </style>
+
 </head>
 
 <body>
@@ -93,86 +131,96 @@
     <div>
         <hr>
         <nav class="nav">
-            <a class="nav-link" href="cart.html"><stong>장바구니</stong></a>
-            <a class="nav-link" href="gift.html"><stong>선물</stong></a>
-            <a class="nav-link" href="review.html"><stong>리뷰</stong></a>
-            <a class="nav-link" href="now.html"><stong>현황</stong></a>
-            <a class="nav-link" href="notice.html"><stong>알림</stong></a>
+            <a class="nav-link" href="cart.html">
+                <stong>장바구니</stong>
+            </a>
+            <a class="nav-link" href="gift.html">
+                <stong>선물</stong>
+            </a>
+            <a class="nav-link" href="review.html">
+                <stong>리뷰</stong>
+            </a>
+            <a class="nav-link" href="now.html">
+                <stong>현황</stong>
+            </a>
+            <a class="nav-link" href="notice.html">
+                <stong>알림</stong>
+            </a>
             <a class="nav-link" href="login.html"><strong>Log in</strong></a>
             <a class="nav-link" href="mypage.html"><strong>My Page</strong></a>
-        </nav>
+        </nav> <hr>
     </div>
     <hr>
+    <h1 style="text-align: center; "><strong><span style="color: #773D30;">장바구니</span></strong></h1>
+    <p style="text-align: center; font-size: 20px; color: #773D30;">오늘 뭐 먹을까?</p>
+    <hr style="width:500px;">
+   
+    <div class="review-box">
+        <div style="display:inline-block;vertical-align:top;">
+            <img src="img1.1.jpg" style="width: 300px; height: 200px; object-fit: cover;">
+        </div>
+        <div style="display:inline-block;"><br>
+            <p style="font-size: 30px; color: #773D30; text-align: center;">고기들기름파스타</p>
 
-    <img src="img7.1.jpg"
-        style="width: 210px; height: 149px; position: absolute; left: 293px; top: 300px; object-fit: cover;" />
-    <p
-        style="width: 346px; height: 59px; position: absolute; left: 531px; top: 308px; font-size: 30px; text-align: left; color: #372724;">
-        김치삼겹살필라프
-    </p>
 
-    <div class="num" style="text-align: center;">
-        <span>수량</span>
-        <span class="count">
-            <a href="#" class="minus">-</a>
-            <span id="result">1</span>
-            <a href="#" class="plus">+</a>
-        </span>
-    </div>
-    
-    <p
-        style="width: 154px; height: 54px; position: absolute; left: 546px; top: 360px; font-size: 27px; text-align: center; color: #372724;">
-        2개
-    </p>
-    <p
-        style="width: 289px; height: 76px; position: absolute; left: 853px; top: 338px; font-size: 30px; text-align: right; color: #372724;">
-        15,000원
-    </p>
-    <p
-        style="width: 801px; height: 74px; position: absolute; left: 319px; top: 531px; font-size: 40px; text-align: center; color: #ffedeb;">
-        총 15,000원 주문하기
-    </p>
+            <div class="num" style="text-align: center;">
+                <span style="font-size:20px;">수량: </span>
+                <span class="count" style="font-size:30px;">
+                    <a href="#" class="minus" style="font-size:30px; border:1px solid #BE0D37; border-radius: 50%; "> -
+                    </a>
+                    <span id="result" style="font-size:30px;"> 1 </span>
+                    <a href="#" class="plus" style="font-size:30px; border:1px solid #BE0D37; border-radius: 50%; "> +
+                    </a>
+                </span>
+            </div>
 
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-        style="position: absolute; left: 540px; top: 393px;" preserveAspectRatio="xMidYMid meet">
-        <circle cx="20.4451" cy="20.1924" r="19" stroke="#BE0D37"></circle>
-    </svg>
-    <p
-        style="width: 38px; height: 38px; position: absolute; left: 542px; top: 310px; font-size: 60px; text-align: center; color: #372724;">
-        -
-    </p>
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-        style="position: absolute; left: 666px; top: 393px;" preserveAspectRatio="xMidYMid meet">
-        <circle cx="20.4451" cy="20.1924" r="19" stroke="#BE0D37"></circle>
-    </svg>
-    <p
-        style="width: 38px; height: 38px; position: absolute; left: 668px; top: 350px; font-size: 30px; text-align: center; color: #372724;">
-        +
-    </p>
-    </div>
-    </div>
-    <script>
-        const minusBtn = document.querySelector(".minus");
-        const plusBtn = document.querySelector(".plus");
-        const result = document.querySelector("#result");
-        const amount = document.querySelector("#amount");
+            <div id="totalAmount" style="text-align: center; margin-top: 10px;">
+                총 합: <span id="totalPrice" style="font-size:30px;">7500</span>원
+            </div><br><br><br><br><br><br>
+            <div class="box">
+                <div>
+                    <p style="font-size: 30px; color: #FFFDF9; text-align: center;"><a href="pay1.html" onlick="alert:('결제창 이동');" style="cursor:pointer">총 <span
+                            id="totalDynamicPrice">7500</span>원 주문하기</a></p>;
+                </div>
+            </div>
+            </section>
 
-        let quantity = 1; // 초기 수량
+            <script>
+                const minusBtn = document.querySelector(".minus");
+                const plusBtn = document.querySelector(".plus");
+                const result = document.querySelector("#result");
+                const totalPriceElement = document.querySelector("#totalPrice");
 
-        minusBtn.addEventListener("click", () => {
-            if (quantity > 1) {
-                quantity--;
-                result.textContent = quantity;
-                amount.textContent = quantity;
-            }
-        });
+                const pricePerItem = 7500; // 단일 항목 가격(김치필라프)
 
-        plusBtn.addEventListener("click", () => {
-            quantity++;
-            result.textContent = quantity;
-            amount.textContent = quantity;
-        });
-    </script>
+                let quantity = 1; // 초기 수량
+
+                minusBtn.addEventListener("click", () => {
+                    if (quantity > 1) {
+                        quantity--;
+                        result.textContent = quantity;
+                        calculateTotalPrice();
+                    }
+                });
+
+                plusBtn.addEventListener("click", () => {
+                    quantity++;
+                    result.textContent = quantity;
+                    calculateTotalPrice();
+                });
+
+                function calculateTotalPrice() {
+                    const total = quantity * pricePerItem;
+                    totalPriceElement.textContent = total;
+                }
+                const totalDynamicPriceElement = document.querySelector("#totalDynamicPrice");
+
+                function calculateTotalPrice() {
+                    const total = quantity * pricePerItem;
+                    totalPriceElement.textContent = total;
+                    totalDynamicPriceElement.textContent = total;
+                }
+            </script>
 </body>
 
 </html>

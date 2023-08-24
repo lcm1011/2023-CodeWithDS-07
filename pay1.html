@@ -1,234 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-      <title>덕스러운 학식생활</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-      <style>
-            * {
-                  font-family: 'Manrope', sans-serif;
-                  text-align: center;
-                  align-items: center;
-                  justify-content: center;
-            }
-
-            body {
-                  overflow: scroll;
-                  background-color: #FFFDF9;
-            }
-
-            .title {
-                  font-size: 80px;
-                  display: flex;
-                  margin: 40px 20px;
-            }
-
-            .nav {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  margin: 20px 0;
-            }
-
-            .nav-link {
-                  font-size: 25px;
-                  padding: 10px;
-                  color: #773D30;
-                  text-decoration-line: none;
-                  margin: 0 10px;
-            }
-
-            .nav-link:hover {
-                  font-size: 25px;
-                  background-color: #F6E6E4;
-            }
-
-            a {
-                  text-decoration-line: none;
-            }
-
-            hr {
-                  background: #FB9718;
-                  height: 2px;
-                  border: 0;
-            }
-
-            .content-container {
-                  position: absolute;
-                  left: 252px;
-                  top: 531px;
-                  border-width: 1px;
-                  border-color: #be0d37;
-                  background: #ffe7e5;
-            }
-
-            .rounded-box {
-                  width: 934px;
-                  height: 785px;
-                  border-radius: 10px;
-            }
-
-            .top-rounded-box {
-                  border-top-left-radius: 10px;
-                  border-top-right-radius: 10px;
-            }
-
-            .total-payment-box {
-                  width: 801px;
-                  height: 74px;
-                  position: absolute;
-                  left: 306px;
-                  top: 1462px;
-                  font-size: 40px;
-                  text-align: center;
-                  color: #ffedeb;
-            }
-
-            .payment-info {
-                  font-size: 28px;
-                  text-align: left;
-                  color: #000;
-            }
-
-            .payment-method {
-                  font-size: 30px;
-            }
-      </style>
-</head>
-
-<body>
-      <a class="title" href="main.html" style="color:#F6E6E4 ;"><strong><span style="color: #BE0D37;"> 덕</span><span
-                        style="color: #773D30;">스러운 </span><span style="color: #FB9718;">학식</span><span
-                        style="color: #773D30;">생활</span></strong></a>
-      <hr>
-      <nav class="nav">
-            <a class="nav-link" href="cart.html">장바구니</a>
-            <a class="nav-link" href="gift.html">선물</a>
-            <a class="nav-link" href="review.html">리뷰</a>
-            <a class="nav-link" href="now.html">현황</a>
-            <a class="nav-link" href="notice.html">알림</a>
-            <a class="nav-link" href="login.html"><strong>Log in</strong></a>
-            <a class="nav-link" href="mypage.html"><strong>My Page</strong></a>
-      </nav>
-      <hr>
-      <h1 style="text-align: center;"><strong><span style="color: #773D30;">결제창</span></strong></h1>
-      <hr style="width: 500px;">
-      <br><br>
-      <img src="김치필라프.png" style="width:200px; height:200px;">
-      <br>
-      <p김치삼겹살필라프< /p>
-            <p2개< /p>
-            <table border ="1" width="50%" height=200 bgcolor=#F6E6E4 bordercolor="#FB9718;" cellspacing="5">
-                  <tr align="center" bgcolor="white">
-                    <tr rowspan="4">보유 선물 쿠폰</td>
-                    <tr rowspan="4">12345678                                10,000원</td>
-                    <tr rowspan="4">보유 선물 쿠폰</td>
-                    <tr>김씨</td>
-                    <tr>이씨</td>
-                    <tr>박씨</td>
-                  </tr>
-            
-                  <tr align="center" bgcolor="white">
-                    <td>100원</td>
-                    <td>200원</td>
-                    <td>400원</td>
-                  </tr>
-                  <tr align="center" bgcolor="white">
-                    <td colspan="4">
-                      colspan 사용
-                    </td>
-                  </tr>
-                </table>
-
-</body>
-
-</html>
-
-
 <!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>결제페이지</title>
     <style>
-         .title{
-            font-size:50px;
-            text-align: left;
-            align-items:center; 
-            justify-content: center;
-            display:flex;
-          }
-                  .nav-link {
-                      font-size: 18px;
-                      padding : 10px;
-                      color: #773D30;
-                  }
-        body {
-        overflow: scroll; 
-        background-color: #FFF3DF;
-      }
-      .box{
-        border: 2px solid #BE0D37;
-        color: #773D30;
-        margin: auto;
-        width: 930px;
-        height: 240px;
-        position: relative;
-        border-radius: 15px;
-        text-align: center;
-      }
-      .box2{
-        border: 2px solid #BE0D37;
-        color: #773D30;
-        border-radius: 15px;
-        text-align: center;
-        background-color: #FFE7E5;
-      }
-
+        body{
+            background-color: #fffdf9;
+            color: #372724;
+        }
     </style>
-    
+    <title>결제하기</title>
 </head>
 <body>
-    <a class="title" href="main.html" style="color:#F6E6E4 ;"><strong><span style="color: #BE0D37;">   덕</span><span style="color: #773D30;">스러운 </span><span style="color: #FB9718;">학식</span><span style="color: #773D30;">생활</span></strong></a>
-    <div>
-       
-        <nav class="nav justify-content-between">
-            <a class="nav-link" href="cart.html" >장바구니</a>
-            <a class="nav-link" href="gift.html" >선물</a>
-            <a class="nav-link" href="review.html" >리뷰</a>
-            <a class="nav-link" href="now.html" >현황</a>
-            <a class="nav-link" href="notice.html" >알림</a>
-            <a class="nav-link" href="login.html" style="text-align:right"><strong>Log in</strong></a>
-            <a class="nav-link" href="mypage.html" style="text-align:right"><strong>My Page</strong></a>
-        </nav>
-    </div>
+    <div
+  style="width: 1440px; height: 1553px; position: relative; overflow: hidden; background: #fffdf9;"
+>
+  <p
+    style="width: 281px; height: 35px; position: absolute; left: 579px; top: 169px; font-size: 40px; text-align: center; color: #372724;"
+  >
+    결제하기
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 1099px; top: 61px; font-size: 20px; font-weight: 700; text-align: center; color: #773d30;"
+  >
+    Logout
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 935px; top: 61px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    알림
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 834px; top: 61px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    현황
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 733px; top: 61px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    리뷰
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 632px; top: 61px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    선물
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 531px; top: 61px; font-size: 20px; text-align: center; color: #773d30;"
+  >
+    장바구니
+  </p>
+  <p
+    style="width: 120px; height: 44px; position: absolute; left: 1219px; top: 61px; font-size: 20px; font-weight: 700; text-align: center; color: #773d30;"
+  >
+    My Page
+  </p>
+  <p
+    style="width: 297px; height: 84px; position: absolute; left: 102px; top: 41px; font-size: 30px; text-align: center;"
+  >
+    <span style="width: 297px; height: 84px; font-size: 30px; text-align: center; color: #be0d37;"
+      >덕</span
+    ><span style="width: 297px; height: 84px; font-size: 30px; text-align: center; color: #773d30;"
+      >스러운 </span
+    ><span style="width: 297px; height: 84px; font-size: 30px; text-align: center; color: #fb9718;"
+      >학식</span
+    ><span style="width: 297px; height: 84px; font-size: 30px; text-align: center; color: #773d30;"
+      >생활</span
+    >
+  </p>
+  <div
+    style="width: 934px; height: 238px; position: absolute; left: 252px; top: 238px; border-radius: 15px; border-width: 1px; border-color: #be0d37;"
+  ></div>
+  <img
+    src="assets/김삼필 1.png"
+    style="width: 210px; height: 149px; position: absolute; left: 293px; top: 281px; object-fit: cover;"
+  />
+  <p
+    style="width: 346px; height: 59px; position: absolute; left: 531px; top: 289px; font-size: 30px; text-align: left; color: #372724;"
+  >
+    김치삼겹살필라프
+  </p>
+  <p
+    style="width: 154px; height: 54px; position: absolute; left: 531px; top: 367px; font-size: 27px; text-align: left; color: #372724;"
+  >
+    2개
+  </p>
+  <p
+    style="width: 289px; height: 76px; position: absolute; left: 853px; top: 319px; font-size: 30px; text-align: right; color: #372724;"
+  >
+    15,000원
+  </p>
+  <div
+    style="width: 934px; height: 785px; position: absolute; left: 252px; top: 531px; border-radius: 10px; background: #ffe7e5; border-width: 1px; border-color: #be0d37;"
+  ></div>
+ 
+  
+  <div
+    style="width: 934px; height: 298px; position: absolute; left: 252px; top: 531px; border-top-left-radius: 10px; border-top-right-radius: 10px; background: #ffe7e5; border-width: 1px; border-color: #be0d37;"
+  ></div>
+  <p
+    style="width: 549px; height: 58px; position: absolute; left: 294px; top: 548px; font-size: 30px; text-align: left; color: #372724;"
+  >
+    보유 선물쿠폰
+  </p>
+  <p
+    style="width: 549px; height: 58px; position: absolute; left: 106px; top: 849px; font-size: 30px; text-align: center; color: #372724;"
+  >
+    결제수단 선택
+  </p>
+  <div
+    style="width: 934px; height: 108px; position: absolute; left: 253px; top: 1444px; border-top-left-radius: 30px; border-top-right-radius: 30px; background: #be0d37;"
+  ></div>
+  <p
+    style="width: 801px; height: 74px; position: absolute; left: 306px; top: 1462px; font-size: 40px; text-align: center; color: #ffedeb;"
+  >
+    총 5,000원 결제하기
+  </p>
+ 
+  <p
+    style="width: 345px; height: 72px; position: absolute; left: 294px; top: 638px; font-size: 28px; text-align: left; color: #000;"
+  >
+    12345678
+  </p>
+  <p
+    style="width: 287px; height: 63px; position: absolute; left: 847px; top: 647px; font-size: 28px; text-align: right; color: #000;"
+  >
+    10,000원
+  </p>
+  <p
+    style="width: 345px; height: 72px; position: absolute; left: 294px; top: 742px; font-size: 28px; text-align: left; color: #000;"
+  >
+    12345679
+  </p>
+  <p
+    style="width: 287px; height: 63px; position: absolute; left: 847px; top: 751px; font-size: 28px; text-align: right; color: #000;"
+  >
+    5,000원
+  </p>
+  <div
+    style="width: 234px; height: 197px; position: absolute; left: 252px; top: 922px; background: #fff7f6; border-width: 1px; border-color: #be0d37;"
+  ></div>
+  
 
-    <p style="text-align: center; font-size: 40px;"><strong><span style="color: #773D30;">결제하기</strong></p>
-
-        <div class="box">
-            <div style="float: left; position:absolute; top:50px; left:50;">
-                <img src="assets/김삼필 1.png " width="210" height="150" alt="" style="vertical-align:top;">
-                <span style="margin-top:10px;font-size:30px;" >
-                김치삼겹살필라프
-                2개
-                15000원
-                </span>
-            </div>
-            
-        </div>
-
-        <ul class="dropdown-menu">
-            <li><h6 class="dropdown-header">선물쿠폰 선택</h6></li>
-            <li><a class="dropdown-item" href="">123456           10000원</a></li>
-            <li><a class="dropdown-item" href="">123455           5000원</a></li>
-            <li><a class="dropdown-item" href="">선택안함</a></li>
-          </ul>
-        
-       
-
+  <div>
+    <div
+    style="width: 234px; height: 197px; position: absolute; left: 485px; top: 1119px; background: #fff7f6; border-width: 1px; border-color: #be0d37;"
+  ></div>
+  <div
+    style="width: 234px; height: 197px; position: absolute; left: 719px; top: 922px; background: #fff7f6; border-width: 1px; border-color: #be0d37;"
+  ></div>
+  
+  
+<div style="font-size: 30px;">
     
+ 
+  <p
+    style="width: 139px; height: 160px; position: absolute; left: 300px; top: 942px; text-align: center; color: #000;"
+  >
+    카드
+  </p>
+  <p
+    style="width: 139px; height: 160px; position: absolute; left: 300px; top: 1139px;text-align: center; color: #000;"
+  >
+    페이코
+  </p>
+  <p
+    style="width: 139px; height: 160px; position: absolute; left: 534px; top: 1139px; text-align: center; color: #000;"
+  >
+    하나 PAY
+  </p>
+  <p
+    style="width: 139px; height: 160px; position: absolute; left: 767px; top: 1139px; text-align: center; color: #000;"
+  >
+    KB Pay
+  </p>
+  <p
+    style="width: 170px; height: 160px; position: absolute; left: 986px; top: 1139px; text-align: center; color: #000;"
+  >
+    WON뱅킹 우리페이
+  </p>
+  <p
+    style="width: 151px; height: 160px; position: absolute; left: 531px; top: 954px;  text-align: center; color: #000;"
+  >
+    간편카드 결제
+  </p>
+  <p
+    style="width: 139px; height: 160px; position: absolute; left: 767px; top: 942px; text-align: center; color: #000;"
+  >
+    네이버페이
+  </p>
+  <p
+    style="width: 139px; height: 160px; position: absolute; left: 1001px; top: 942px; text-align: center; color: #000;"
+  >
+    카카오페이
+  </p>
+
+</div>
+  
+
+      
 </body>
 </html>
 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>덕스러운 학식생활</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Manrope', sans-serif;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            overflow: scroll;
+            background-color: #FFFDF9;
+        }
+
+        .title {
+            font-size: 80px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 40px 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .nav-link {
+            font-size: 25px;
+            padding: 10px;
+            color: #773D30;
+            text-decoration-line: none;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover {
+            font-size: 25px;
+            background-color: #F6E6E4;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+        .people {
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        hr {
+            background: #FB9718;
+            height: 2px;
+            border: 0;
+        }
+
+        article {
+            border: 2px solid color=#FB9718;
+            width: 300px;
+            height: 250px;
+            font-size: 0.8em;
+            margin: 10px;
+            padding: 10px;
+            float: left;
+            background-color: #F6E6E4;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .img {
+            border: 2px solid #773D30;
+        }
+
+        .nav-link2 {
+            text-decoration: none;
+            font-size: 20px;
+            width: 150px;
+            height: 40px;
+            border: 1px solid #FB9718;
+            display: inline-block;
+            /*인라인요소는 사이즈가 정해져있음 따라서, display:inline-block 혹은 block해야함*/
+            margin: 5px 50px;
+            text-align: center;
+            line-height: 40px;
+            background: #fd978a;
+            color: #773D30;
+            /*글씨색*/
+            border-radius: 10px;
+        }
+
+        .review-box {
+            border: 2px solid #BE0D37;
+            border-radius: 15px;
+            height: 300px;
+            width: 200x;
+            padding-left: 2%;
+            padding-top: 3%;
+        }
+
+        .box {
+            border: 2px solid #BE0D37;
+            background-color: #BE0D37;
+            border-radius: 20px;
+            height: 200px;
+            width: 800x;
+            text-align: center;
+        }
+        .dropdown {
+                  position: relative;
+                  display: inline-block;
+                  text-align: center;
+            }
+
+            .dropbtn_icon {
+                  font-family: 'Material Icons';
+            }
+
+            .dropbtn {
+                  border: 1px solid #FFE7E5;
+                  border-radius: 15px;
+                  background-color: #FFE7E5;
+                  font-weight: 400;
+                  color: #372724;
+                  padding: 12px;
+                  width: 600px;
+                  height: 200px;
+                  text-align: center;
+                  cursor: pointer;
+                  font-size: 40px;
+            }
+
+            .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  z-index: 1;
+                  /*다른 요소들보다 앞에 배치*/
+                  font-weight: 400;
+                  background-color: rgba(251, 151, 24, 0.05);
+                  min-width: 600px;
+            }
+
+            .dropdown-content a {
+                  display: block;
+                  text-decoration: none;
+                  color: #773D30;
+                  font-size: 30px;
+                  padding: 12px 20px;
+            }
+
+            .dropdown-content a:hover {
+                  background-color: rgba(251, 151, 24, 0.05);
+            }
+
+            .dropdown:hover .dropdown-content {
+                  display: block;
+            }
+    </style>
+
+</head>
+
+<body>
+    <a class="title" href="main.html"><strong><span style="color: #BE0D37;"> 덕</span><span style="color: #773D30;">스러운
+            </span><span style="color: #FB9718;">학식</span><span style="color: #773D30;">생활</span></strong></a>
+    </div>
+    <div>
+        <hr>
+        <nav class="nav">
+            <a class="nav-link" href="cart.html">
+                <stong>장바구니</stong>
+            </a>
+            <a class="nav-link" href="gift.html">
+                <stong>선물</stong>
+            </a>
+            <a class="nav-link" href="review.html">
+                <stong>리뷰</stong>
+            </a>
+            <a class="nav-link" href="now.html">
+                <stong>현황</stong>
+            </a>
+            <a class="nav-link" href="notice.html">
+                <stong>알림</stong>
+            </a>
+            <a class="nav-link" href="login.html"><strong>Log in</strong></a>
+        </nav> <hr>
+    </div>
+    <br><br>
+
+    <p style="text-align: center; font-size: 50px;"><span style="color: #773D30;">결제하기</span></p>
+    <br><br>
+  
+
+   
+    <div class="review-box">
+        <div style="display:inline-block;vertical-align:top;">
+            <img src="img1.1.jpg" style="width: 300px; height: 200px; object-fit: cover;">
+        </div>
+        <div style="display:inline-block;"><br>
+            <p style="font-size: 30px; color: #773D30; text-align: center;">고기들기름파스타</p>
+
+
+            <div class="num" style="text-align: center;">
+                <span style="font-size:20px;">수량: </span>
+                <span class="count" style="font-size:30px;">
+                    <a href="#" class="minus" style="font-size:30px; border:1px solid #BE0D37; border-radius: 50%; "> -
+                    </a>
+                    <span id="result" style="font-size:30px;"> 1 </span>
+                    <a href="#" class="plus" style="font-size:30px; border:1px solid #BE0D37; border-radius: 50%; "> +
+                    </a>
+                </span>
+            </div>
+
+            <div id="totalAmount" style="text-align: center; margin-top: 10px;">
+                총 합: <span id="totalPrice" style="font-size:30px;">7500</span>원
+            </div><br><br><br><br><br><br>
+
+            <div class="dropdown">
+              <button class="dropbtn">
+                    <span class="dropbtn_icon"></span>
+                    보유쿠폰
+              </button>
+              <div class="dropdown-content">
+                    <a href="#" onclick="alert('장바구니 이동');" style="cursor:pointer">5000원</a>
+                    <a href="#">10000원</a>
+              </div>
+           </div>
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <div class="dropdown">
+            <button class="dropbtn">
+                  <span class="dropbtn_icon"></span>
+                  결제수단
+            </button>
+            <div class="dropdown-content">
+                  <a href="#" style="cursor:pointer">신용카드</a>
+                  <a href="#">간편카드결제</a>
+                  <a href="#">네이버페이</a>
+                  <a href="#">카카오페이</a>
+                  <a href="#">페이코</a>
+            </div>
+         </div>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+            <div class="box">
+                <div>
+                    <p style="font-size: 50px; color: #FFFDF9; text-align: center;"><a href="pay2.html" onlick="alert:('결제창 이동');" style="cursor:pointer">총 <span
+                        id="totalDynamicPrice">7500</span>원 주문하기</a></p>
+                </div>
+            </div>
+            </section>
+
+            <script>
+                const minusBtn = document.querySelector(".minus");
+                const plusBtn = document.querySelector(".plus");
+                const result = document.querySelector("#result");
+                const totalPriceElement = document.querySelector("#totalPrice");
+
+                const pricePerItem = 7500; // 단일 항목 가격(김치필라프)
+
+                let quantity = 1; // 초기 수량
+
+                minusBtn.addEventListener("click", () => {
+                    if (quantity > 1) {
+                        quantity--;
+                        result.textContent = quantity;
+                        calculateTotalPrice();
+                    }
+                });
+
+                plusBtn.addEventListener("click", () => {
+                    quantity++;
+                    result.textContent = quantity;
+                    calculateTotalPrice();
+                });
+
+                function calculateTotalPrice() {
+                    const total = quantity * pricePerItem;
+                    totalPriceElement.textContent = total;
+                }
+                const totalDynamicPriceElement = document.querySelector("#totalDynamicPrice");
+
+                function calculateTotalPrice() {
+                    const total = quantity * pricePerItem;
+                    totalPriceElement.textContent = total;
+                    totalDynamicPriceElement.textContent = total;
+                }
+            </script>
+</body>
+
+</html>

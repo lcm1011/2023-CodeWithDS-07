@@ -9,6 +9,9 @@
       <style>
             * {
                   font-family: 'Manrope', sans-serif;
+                  text-align: center;
+                  align-items: center;
+                  justify-content: center;
             }
 
             body {
@@ -22,12 +25,82 @@
                   align-items: center;
                   justify-content: center;
                   display: flex;
+                  margin: 40px 20px;
+            }
+
+            .nav {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 20px 0;
             }
 
             .nav-link {
-                  font-size: 18px;
+                  font-size: 25px;
                   padding: 10px;
-                  color: #372724;
+                  color: #773D30;
+                  text-decoration-line: none;
+                  margin: 0 10px;
+            }
+
+            .nav-link:hover {
+                  font-size: 25px;
+                  background-color: #F6E6E4;
+            }
+
+            a {
+                  text-decoration-line: none;
+            }
+
+            .people {
+                  font-size: 20px;
+                  text-align: center;
+                  align-items: center;
+                  justify-content: center;
+                  display: flex;
+            }
+
+            hr {
+                  background: #FB9718;
+                  height: 2px;
+                  border: 0;
+            }
+
+            article {
+                  border: 2px solid color=#FB9718;
+                  width: 300px;
+                  height: 250px;
+                  font-size: 0.8em;
+                  margin: 10px;
+                  padding: 10px;
+                  float: left;
+                  background-color: #F6E6E4;
+                  border-radius: 5px;
+                  text-align: center;
+                  align-items: center;
+                  justify-content: center;
+                  display: flex;
+            }
+
+            .img {
+                  border: 2px solid #773D30;
+            }
+
+            .nav-link2 {
+                  text-decoration: none;
+                  font-size: 20px;
+                  width: 150px;
+                  height: 40px;
+                  border: 1px solid #FB9718;
+                  display: inline-block;
+                  /*인라인요소는 사이즈가 정해져있음 따라서, display:inline-block 혹은 block해야함*/
+                  margin: 5px 50px;
+                  text-align: center;
+                  line-height: 40px;
+                  background: #fd978a;
+                  color: #773D30;
+                  /*글씨색*/
+                  border-radius: 10px;
             }
 
             .review-box {
@@ -109,16 +182,16 @@
       <hr>
 
       <section style="text-align: center; color: #773D30;">
-            <h7>#계란</h7>
-            <h2>김치삼겹살필라프</h2>
-            <h7>☆3.5(-명)</h7>
+            <h7>#돼지고기 </h7>
+            <h2>고기 들기름 파스타</h2>
+            <h7>☆3.8(45명)</h7>
             <p></p>
-            <h7>김치와 삽겹살이 어우러져 맛있는 필라프! 호불호 없이 무난하게 즐길 수 있는 맛</h7>
+            <h7>고기와 들기름이 어우러져 맛있는 파스타! 호불호 없이 무난하게 즐길 수 있는 맛</h7>
             <br>
             <h9>Simple is the best!</h9>
 
             <figure class="figure">
-                  <img src="김치필라프.png" class="figure-img img-fluid rounded" alt="..." width="500" height="300">
+                  <img src="img1.1.jpg" class="figure-img img-fluid rounded" alt="..." width="500" height="300">
                   <figcaption class="figure-caption">7500원
                   </figcaption>
             </figure>
@@ -136,61 +209,44 @@
             <br>
             <div style="text-align: center;">
 
-                  <svg width="300" height="1" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="none">
-                        <line y1="0.5" x2="300" y2="0.5" stroke="#FB9718"></line>
-                  </svg>
+                  <section>
+                        <svg width="300" height="1" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              preserveAspectRatio="none">
+                              <line y1="0.5" x2="300" y2="0.5" stroke="#FB9718"></line>
+                        </svg>
 
-                  <div class="dropdown">
-                        <button class="dropbtn">
-                              <span class="dropbtn_icon"></span>
-                              고기들기름파스타 <span id="result">1</span>개 주문하기
-                        </button>
-                        <div class="dropdown-content">
-                              <a href="#" onclick="alert('장바구니 이동');" style="cursor:pointer">장바구니 담기</a>
-                              <a href="#">바로 주문하기</a>
+                        <div class="dropdown">
+                              <button class="dropbtn">
+                                    <span class="dropbtn_icon"></span>
+                                    <p style=" text-align:center;">고기 들기름 파스타</p>
+                              </button>
+                              <div class="dropdown-content">
+                                    <a href="cart.html" onclick="alert('장바구니 이동');" style="cursor:pointer">장바구니 담기</a>
+                                    <a href="pay1.html" id="orderButton  onclick="alert('결제창 이동');" style="cursor:pointer"">주문하기</a>
+                              </div>
                         </div>
-                  </div>
 
-
-                  <svg width="300" height="1" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="none">
-                        <line y1="0.5" x2="300" y2="0.5" stroke="#FB9718"></line>
-                  </svg>
+                        <svg width="300" height="1" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              preserveAspectRatio="none">
+                              <line y1="0.5" x2="300" y2="0.5" stroke="#FB9718"></line>
+                        </svg>
+                  </section>
             </div>
 
             <br>
             <br>
             <br>
 
-
-            <section>
-                  <p style="font-size: 50px;">Review</p>
-
-                  <div class="review-box" style="border: 1px solid #fb9718; border-radius: 50px">
-                        <div style="display:inline-block;vertical-align:top;">
-                              <img src="김치필라프.png" style="width: 200px; height: 150px; object-fit: cover;">
-                        </div>
-                        <div style="display:inline-block;">
-                              <p style="font-size: 15px; color: #773D30; text-align: left;">전*우 1시간 전 ☆3.5</p>
-                              <p style="font-size: 15px; text-align: left; color: #372724;">
-                                    계란이 냉동인 것 같긴한데 그래도 맛있어요! 카카오페이로 결제하면 천원 할인되니까 덕우들 참고해요~
-                              </p>
-
-                        </div>
-                  </div>
-            </section>
-            <br>
-
+            <p style="font-size: 50px;">Review</p>
             <section>
                   <div class="review-box" style="border: 1px solid #fb9718; border-radius: 50px">
                         <div style="display:inline-block;vertical-align:top;">
-                              <img src="김치필라프.png" style="width: 200px; height: 150px; object-fit: cover;">
+                              <img src="img1.1.jpg" style="width: 200px; height: 150px; object-fit: cover;">
                         </div>
                         <div style="display:inline-block;">
-                              <p style="font-size: 15px; color: #773D30; text-align: left;">전*우 1시간 전 ☆3.5</p>
+                              <p style="font-size: 15px; color: #773D30; text-align: left;">이*윤 10분 전 ☆3.5</p>
                               <p style="font-size: 15px; text-align: left; color: #372724;">
-                                    계란이 냉동인 것 같긴한데 그래도 맛있어요! 카카오페이로 결제하면 천원 할인되니까 덕우들 참고해요~
+                                    나쁘지 않음 가성비 좋은 학식당 메뉴임 한번 먹어볼만함!~~
                               </p>
 
                         </div>
@@ -203,12 +259,12 @@
 
                   <div class="review-box" style="border: 1px solid #fb9718; border-radius: 50px">
                         <div style="display:inline-block;vertical-align:top;">
-                              <img src="김치필라프.png" style="width: 200px; height: 150px; object-fit: cover;">
+                              <img src="img1.1.jpg" style="width: 200px; height: 150px; object-fit: cover;">
                         </div>
                         <div style="display:inline-block;">
-                              <p style="font-size: 15px; color: #773D30; text-align: left;">전*우 1시간 전 ☆3.5</p>
+                              <p style="font-size: 15px; color: #773D30; text-align: left;">김*민 50분 전 ☆4.2</p>
                               <p style="font-size: 15px; text-align: left; color: #372724;">
-                                    계란이 냉동인 것 같긴한데 그래도 맛있어요! 카카오페이로 결제하면 천원 할인되니까 덕우들 참고해요~
+                                    내돈내산 메뉴 추천! 프리오더로 주문하니까 빠르고 좋았음!!!
                               </p>
 
                         </div>
@@ -220,68 +276,47 @@
 
                   <div class="review-box" style="border: 1px solid #fb9718; border-radius: 50px">
                         <div style="display:inline-block;vertical-align:top;">
-                              <img src="김치필라프.png" style="width: 200px; height: 150px; object-fit: cover;">
+                              <img src="img1.1.jpg" style="width: 200px; height: 150px; object-fit: cover;">
                         </div>
                         <div style="display:inline-block;">
-                              <p style="font-size: 15px; color: #773D30; text-align: left;">전*우 1시간 전 ☆3.5</p>
+                              <p style="font-size: 15px; color: #773D30; text-align: left;">전*우 1시간 전 ☆4.0</p>
                               <p style="font-size: 15px; text-align: left; color: #372724;">
-                                    계란이 냉동인 것 같긴한데 그래도 맛있어요! 카카오페이로 결제하면 천원 할인되니까 덕우들 참고해요~
+                                    맛있어요! 카페결제하면 천원 할인되니까 덕우들 참고해요~
                               </p>
                         </div>
                   </div>
             </section>
             <br>
-
-            <section>
-
-                  <div class="review-box" style="border: 1px solid #fb9718; border-radius: 50px">
-                        <div style="display:inline-block;vertical-align:top;">
-                              <img src="assets/김삼필 리뷰1 1.png" style="width: 200px; height: 150px; object-fit: cover;">
-                        </div>
-                        <div style="display:inline-block;">
-                              <p style="font-size: 15px; color: #773D30; text-align: left;">전*우 1시간 전 ☆3.5</p>
-                              <p style="font-size: 15px; text-align: left; color: #372724;">
-                                    계란이 냉동인 것 같긴한데 그래도 맛있어요! 카카오페이로 결제하면 천원 할인되니까 덕우들 참고해요~
-                              </p>
-
-                        </div>
-
-                  </div>
-            </section>
-            <br>
-
-
-
-
-
 
             <script>
                   const minusBtn = document.querySelector(".minus");
                   const plusBtn = document.querySelector(".plus");
                   const result = document.querySelector("#result");
-                  const amount = document.querySelector("#amount");
-              
+                  const orderButton = document.querySelector("#orderButton");
+
                   let quantity = 1; // 초기 수량
-              
+
                   minusBtn.addEventListener("click", (event) => {
-                      event.preventDefault(); // 기본 동작 중단
-                      if (quantity > 1) {
-                          quantity--;
-                          result.textContent = quantity;
-                          amount.textContent = quantity;
-                      }
+                        event.preventDefault();
+                        if (quantity > 1) {
+                              quantity--;
+                              result.textContent = quantity;
+                        }
                   });
-              
+
                   plusBtn.addEventListener("click", (event) => {
-                      event.preventDefault(); // 기본 동작 중단
-                      quantity++;
-                      result.textContent = quantity;
-                      amount.textContent = quantity;
+                        event.preventDefault();
+                        quantity++;
+                        result.textContent = quantity;
                   });
-              </script>
-              
 
-
+                  // 주문하기 버튼 클릭 시, 수량을 포함한 메시지를 생성합니다.
+                  orderButton.addEventListener("click", (event) => {
+                        event.preventDefault();
+                        const message = `고기 들기름 파스타 ${quantity}개를 주문합니다.`;
+                        alert(message);
+                  });
+            </script>
 
 
 </body>
